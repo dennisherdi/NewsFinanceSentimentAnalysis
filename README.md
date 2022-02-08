@@ -88,9 +88,14 @@ output: 0.73
 accuracy_score(y_test,predSVM)
 output: 0.71
 ```
-#### Conclusion
-* Among all other techniques used, Random Forest Classifier has performed best with the highest accuracy. One reason why RF works well is because the algorithm can look past and handle the missing values in the news. 
 
+###### LSTM Neural Network
+```
+cm = confusion_matrix(y_test, y_pred)
+output: 0.7735719201651755
+```
+#### Conclusion
+* Among all the other techniques used, LSTM has the best performance with the highest accuracy. One of the reasons why LSTM works so well is because the algorithm can see past and handle values more accurately because it is one type of architecture that Recurrent Neural Network (RNN) uses in news.
 
 ### Limitations of Sentiment Analysis
 * One of the disadvantages of using the lexicon is that people express emotions in different ways. Some may be over-expressing in a statement.
